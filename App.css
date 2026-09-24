@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 0;
+}
+
+.two-panel {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.panel {
+  flex: 1 1 420px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.stock-table th,
+.stock-table td {
+  text-align: left;
+  padding: 0.4rem 0.3rem;
+  border-bottom: 1px solid #eee;
+}
+
+.row-actions button {
+  margin-right: 0.3rem;
+}
+
+.edit-form,
+.add-form {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.edit-form input,
+.add-form input,
+.edit-form select,
+.add-form select {
+  padding: 0.3rem;
+  width: 110px;
+}
+
+.field-errors {
+  color: #b00020;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #888;
+  padding: 1rem;
+}
+
+.banner {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.banner-warn {
+  background: #fff3cd;
+  border: 1px solid #ffe08a;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  border-bottom: 1px solid #eee;
+  padding: 0.6rem 0;
+}
+
+.menu-item-main {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dish-name {
+  font-weight: 600;
+  flex: 1;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.badge-available {
+  background: #d4f7d4;
+  color: #14620a;
+}
+
+.badge-unavailable {
+  background: #fcdada;
+  color: #8a0f0f;
+}
+
+.dish-reasons {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+.toast {
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.toast-success {
+  background: #d4f7d4;
+  color: #14620a;
+}
+
+.toast-error {
+  background: #fcdada;
+  color: #8a0f0f;
+}
